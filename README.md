@@ -1,5 +1,8 @@
 # Simple Technical Explainer
-A technical explainer that help non-experts to get know about the IT concepts. Modify with ChatDev for learning purpose.
+A technical explainer that help non-experts to get know about the IT concepts. Modify with ChatDev for learning purpose. 
+
+Sample explaination outcome: [Large Language Model.md](https://github.com/TayQiMing/Simple_Technical_Explainer-ChatDev/blob/main/WareHouse/LargeLanguageModel_DefaultOrganization_20231001003050/Large%20Language%20Model.md)
+
 
 Follow the steps below for experience Simple Technical Explainer:
 
