@@ -1,0 +1,40 @@
+Task:
+Explain Large Language Model to non-technical audiences.
+
+Config:
+ChatEnvConfig.clear_structure: True
+ChatEnvConfig.git_management: False
+ChatEnvConfig.gui_design: True
+
+
+Roster:
+Chief Executive Officer, Counselor, Content Director, Content Generator
+
+Modality:
+
+
+Ideas:
+ 
+Main Topic: Large Language Model
+1: Introduction to Large Language Model
+   - 1.1: What is a Language Model?
+   - 1.2: Why are Language Models important?
+2: Understanding Large Language Models
+   - 2.1: What makes a Language Model "large"?
+   - 2.2: How are Large Language Models trained?
+3: Applications and Implications of Large Language Models
+   - 3.1: Natural Language Understanding and Generation
+   - 3.2: Ethical Considerations and Challenges of Large Language Models
+
+Language:
+
+
+Code_Version:
+0.0
+
+Proposed_images:
+0
+
+Incorporated_images:
+0
+
