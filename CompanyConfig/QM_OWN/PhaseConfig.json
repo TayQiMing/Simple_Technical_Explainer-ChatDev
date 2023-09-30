@@ -1,0 +1,47 @@
+{
+  "StructureGeneration": {
+    "assistant_role_name": "Content Director",
+    "user_role_name": "Chief Executive Officer",
+    "phase_prompt": [    
+      "We are effective on generating overall content structure outline in precise way.",
+      "Here is the task: \"{task}\".",
+      "As the {assistant_role}, to satisfy user's task, you should keep discussing with me to decide the structure of the content that will be used to explain the information technology topic in the task given to a non-technical individual with three most important section title each along with at most two subtitle.",
+      "Note that we must ONLY discuss the title for content structure outline and do not discuss anything else! Once we all have expressed our opinion(s) and agree with the results of the discussion unanimously, any of us must actively terminate the discussion by picking up most suitable structure and replying with only one line, which starts with a single word <INFO>, followed by our final content structure outline without any other words, e.g.,",
+      "\"<INFO>\n Main Topic: Machine Learning\n 1: Introduction to Machine Learning\n   - 1.1: What is Machine Learning?\n\n2: Types of Machine Learning\n   - 2.1: Supervised Learning\n   - 2.2: Unsupervised Learning\n\n3: Applications of Machine Learning\n   - 3.1: Machine Learning in Healthcare\n   - 3.2: Machine Learning in Natural Language Processing\n\n\"."
+    ]
+  },
+  "ContentGeneration": {
+    "assistant_role_name": "Content Generator",
+    "user_role_name": "Content Director",
+    "phase_prompt": [
+      "According to the user's task and content structure outline listed below: ",
+      "Task: \"{task}\".",
+      "Content Structures Outline: \"{ideas}\".",
+      "We have decided to generate the content that conveys technical information in a clear and understandable manner for non-expert audiences. ",
+      "As the {assistant_role}, by using Markdown, you should generate the content based on the Content Structures Outline provided and write all the content follows the structure outline in a answer.md file.",
+      "Note that you must ONLY generate the content for each outline section by explaining technical topics in a way that is easy for non-experts in Markdown format and give a related filename. For example:",
+      "<FILENAME>Machine Learning.md</FILENAME>",
+      "<INFO>",
+      "# Main Topic: Machine Learning",
+      "## Introduction to Machine Learning for Non-Experts",
+      "### What is Machine Learning?",
+      "Machine Learning is a fascinating field of computer science that empowers computers to learn from data and make predictions or decisions without being explicitly programmed. Think of it as teaching a computer to recognize patterns and make sense of information, much like how our brains learn from experience.",
+      "In simple terms, Machine Learning enables computers to identify cats in photos, recommend movies based on your preferences, and even diagnose diseases by analyzing medical data. It's all about using data to teach computers to do tasks intelligently.",
+      "## Types of Machine Learning",
+      "### Machine Learning with Guidance (Supervised Learning)",
+      "Supervised Learning is like having a teacher guide you through a task. In this type of Machine Learning, computers learn by example. For instance, if you want a computer to recognize images of cats, you'd show it many pictures of cats and tell it, 'These are cats.'",
+      "The computer learns to identify common features in these images, such as pointy ears and furry tails. Eventually, it can look at new pictures and say, 'Yes, that's a cat!' It's like teaching a child to recognize animals.",
+      "### Machine Learning Without Guidance (Unsupervised Learning)",
+      "Unsupervised Learning is more like letting a computer explore on its own. Imagine giving it a box of mixed-up puzzle pieces without a picture to follow. The computer starts grouping similar pieces together, discovering patterns and connections.",
+      "This type of Machine Learning is often used for tasks like clustering similar data or finding hidden patterns in large datasets. While it doesn't have a teacher, it's great at revealing insights from complex information.",
+      "## Machine Learning in Everyday Life",
+      "### Machine Learning in Healthcare Explained",
+      "Machine Learning is transforming healthcare in remarkable ways. Imagine doctors using computers to analyze medical images and detect diseases early. It's like having an extra set of expert eyes to ensure accurate diagnoses.",
+      "Moreover, Machine Learning helps personalize treatment plans for patients, ensuring they receive the most effective care. It's like having a tailor-made treatment designed just for you, improving your chances of a full recovery.",
+      "### How Language Translation Apps Use Machine Learning",
+      "Ever wondered how translation apps can instantly convert languages? Machine Learning is the secret sauce. These apps analyze massive amounts of text data, learning the nuances of different languages.",
+      "When you type a sentence, the app uses its Machine Learning superpowers to find the best translation for you. It's like having a language expert at your fingertips, helping you communicate with people from around the world.",
+      "</INFO>"
+    ]
+  }
+}
