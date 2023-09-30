@@ -1,3 +1,84 @@
+# Simple Technical Explainer
+A technical explainer that help non-experts to get know about the IT concepts. Modify with ChatDev for learning purpose.
+
+Follow the steps below for experience Simple Technical Explainer:
+
+1. **Clone the GitHub Repository:**
+   
+   Begin by cloning the repository using the command:
+   ```
+   git clone https://github.com/TayQiMing/Simple_Technical_Explainer-ChatDev.git
+   ```
+   
+3. **Set Up Python Environment:**
+   
+   Ensure you have a version 3.9 or higher Python environment. You can create and
+   activate this environment using the following commands, replacing `ChatDev_conda_env` with your preferred environment
+   name:
+   ```
+   conda create -n ChatDev_conda_env python=3.9 -y
+   conda activate ChatDev_conda_env
+   ```
+   
+5. **Install Dependencies:**
+   
+   Move into the `ChatDev` directory and install the necessary dependencies by running:
+   ```
+   cd ChatDev
+   pip3 install -r requirements.txt
+   ```
+   
+7. **Set OpenAI API Key:**
+   
+   Export your OpenAI API key as an environment variable. Replace `"your_OpenAI_API_key"` with
+   your actual API key. Remember that this environment variable is session-specific, so you need to set it again if you
+   open a new terminal session.
+   
+   On Unix/Linux:
+   ```
+   export OPENAI_API_KEY="your_OpenAI_API_key"
+   ```
+   On Windows:
+   ```
+   $env:OPENAI_API_KEY="your_OpenAI_API_key"
+   ```
+   OR
+   ```
+   set OPENAI_API_KEY “your_OpenAI_API_key”
+   ```
+   Then check with
+   ```
+   echo %OPENAI_API_KEY%
+   ```
+   
+9. **Start to run:**
+    
+   Use the following command to generate the topic explaination,
+   replacing `[description_of_your_explaination_task]` with your topic's description and `[your_project_folder_name]` with your desired project
+   name:
+   
+   On Unix/Linux:
+   ```
+   python3 run.py --config "QM_OWN" --task "[description_of_your_explaination_task]" --name "[your_project_folder_name]"
+   ```
+   On Windows:
+   ```
+   python run.py --config "QM_OWN" --task "[description_of_your_explaination_task]" --name "[your_project_folder_name]"
+   ```
+
+   Sample:
+   ```
+   python run.py --config "QM_OWN" --task "Explain Large Language Model to non-technical audiences." --name "LargeLanguageModel"
+   ```
+
+   Then find markdown file `your_generated_topic_name.md` generated in ``Simple_Technical_Explainer-ChatDev/WareHouse/your_project_folder_name``.
+
+<br>
+
+-------------------
+
+<br>
+
 # Communicative Agents for Software Development
 
 <p align="center">
