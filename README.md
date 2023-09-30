@@ -72,6 +72,7 @@ Follow the steps below for experience Simple Technical Explainer:
    ```
 
    Then find markdown file `your_generated_topic_name.md` generated in ``Simple_Technical_Explainer-ChatDev/WareHouse/your_project_folder_name``.
+   For example, [Large Language Model.md](https://github.com/TayQiMing/Simple_Technical_Explainer-ChatDev/blob/main/WareHouse/LargeLanguageModel_DefaultOrganization_20231001003050/Large%20Language%20Model.md) that generated for sample use case.
 
 <br>
 
